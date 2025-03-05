@@ -50,7 +50,7 @@ body {
     width: 100%;
     display: block;
     background-color: white;
-    color: black
+    color: black;
 }
 
 .portfolio .statement{
@@ -73,4 +73,46 @@ body {
 
 .image-container img:hover {
     transform: scale(1.2);
+}
+
+/* .location img {
+    display: flex;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+} */
+
+.location {
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: fit-content;
+}
+
+.location .title {
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+/* .location .details {
+    display: block;
+    text-align: center;
+    left: 40%;
+    position: absolute;
+    padding-bottom: 30px;
+} */
+
+.footer {
+    display: flex;
+    margin-top: 10%;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    justify-content: space-around;
+    bottom: 0;
 }
