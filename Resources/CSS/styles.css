@@ -1,0 +1,154 @@
+html {
+    font-size: 16px;
+}
+
+:root {
+    --main-bg-color: rgb(61, 35, 15);
+    --main-font-color: whitesmoke;
+    --main-font-family: Helvetica;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+}
+
+.header {
+    display: flex;
+    align-content: center;
+    top: 0rem;
+    left: 0rem;
+    position: fixed;
+    border-bottom-style: solid;
+    width: 100%;
+    height: 4.6875rem;
+    justify-content: space-between;
+    z-index: 5;
+    background-color: rgb(61, 35, 15);
+}
+
+.header .logo {
+    padding-left: 1.25rem;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: underline;
+    height: 2.8125rem;
+    padding-top: 1.6rem;
+    padding-right: 1.25rem;
+}
+
+.navigation ul li {
+    padding-right: 1.25rem;
+}
+
+.navigation ul li a{
+    color: whitesmoke;
+}
+
+.mission img {
+    display: flex;
+    padding-top: 4.6875rem;
+    justify-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.mission .statement {
+    position: absolute;
+    text-align: center;
+    top: 28.125em;
+    width: 100%;
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+.portfolio .statement{
+    text-align: center;
+    padding-top: 1.25rem;
+}
+
+.portfolio .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio .image-container img {
+    object-fit: contain;
+    width: 75%;
+    justify-content: center;
+    padding-left: 3.125rem;
+    padding-top: 1.25rem;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+}
+
+/* .location img {
+    display: flex;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+} */
+
+.location {
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: fit-content;
+}
+
+.location .title {
+    padding-top: 0.625rem;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+/* .location .details {
+    display: block;
+    text-align: center;
+    left: 40%;
+    position: absolute;
+    padding-bottom: 30px;
+} */
+
+.footer {
+    display: flex;
+    margin-top: 10%;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    justify-content: space-around;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        width: 400px;
+    }
+
+    .navigation {
+        display: block;
+        text-align: center;
+    }
+
+    .mission img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+}
